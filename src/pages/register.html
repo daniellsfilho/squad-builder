@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title> Squad Builder - Register Page </title>
+</head>
+<body>
+    <header>
+        <h1> SQUAD BUILDER </h1>
+        <nav class="menu">
+            <ul class="itens-menu">
+                <li><a href="../pages/index.html"> Home </a></li>
+                <li><a href="../pages/register.html"> Registre-se </a></li>
+                <li><a href="../pages/about.html"> Sobre </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="conteudo">
+            <h2> Página de registro </h2>
+            <div class="jogos">
+                <button class="ativa" data-jogo="valorant"> Valorant </button>
+                <button data-jogo="rainbow6siege"> Rainbow Six Siege </button>
+                <button data-jogo="csgo"> CS:GO </button>
+                <button data-jogo="fortnite"> Fortnite </button>
+            </div>
+            <div class="formularios">
+                <div data-conteudo="valorant">
+                    <form class="form">
+                        <label for="email"> Insira teu email: </label>
+                        <input type="text" id="email" placeholder="ze@gmail.com" required>
+                        <label for="nickValorant"> Insira teu nickname: </label>
+                        <input type="text" id="nickValorant" placeholder="Agente_00K7" required>
+                        <label for="tagValorant"> Insira tua tag: </label>
+                        <input type="text" id="tagValorant" placeholder="#PINEI" required>
+                        <label for="idade"> Insira tua idade: </label>
+                        <input type="number" id="idade" placeholder="18" required>
+                        <fieldset>
+                            <legend> Qual sua função preferida? </legend>
+                            <label for="radio-controlador" data-funcao="controlador"><input type="radio" name="funcao" value="Controlador" id="radio-controlador" class="input-radio"> Controlador </label>
+                            <label for="radio-duelista" data-funcao="duelista"><input type="radio" name="funcao" value="Duelista" id="radio-duelista" class="input-radio"> Duelista </label>
+                            <label for="radio-iniciador" data-funcao="iniciador"><input type="radio" name="funcao" value="Iniciador" id="radio-iniciador" class="input-radio"> Iniciador </label>
+                            <label for="radio-sentinela" data-funcao="sentinela"><input type="radio" name="funcao" value="Sentinela" id="radio-sentinela" class="input-radio"> Sentinela </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend> Qual seu main? </legend>
+                            <select>
+                                <option></option>
+                                <option data-agente="controlador"> Brimstone </option>
+                                <option data-agente="duelista"> Phoenix </option>
+                                <option data-agente="sentinela"> Sage </option>
+                                <option data-agente="iniciador"> Sova </option>
+                                <option data-agente="controlador"> Viper </option>
+                                <option data-agente="sentinela"> Cypher </option>
+                                <option data-agente="duelista"> Reyna </option>
+                                <option data-agente="sentinela"> Killjoy </option>
+                                <option data-agente="iniciador"> Breach </option>
+                                <option data-agente="controlador"> Omen </option>
+                                <option data-agente="duelista"> Jett </option>
+                                <option data-agente="duelista"> Raze </option>
+                                <option data-agente="iniciador"> Skye </option>
+                                <option data-agente="duelista"> Yoru </option>
+                                <option data-agente="controlador"> Astra </option>
+                                <option data-agente="iniciador"> Kay/O </option>
+                                <option data-agente="sentinela"> Chamber </option>
+                                <option data-agente="duelista"> Neon </option>
+                                <option data-agente="iniciador"> Fade </option>
+                            </select>
+                        </fieldset>
+                        <label for="checkbox"><input type="checkbox" id="checkbox" class="checkbox"> Gostaria de receber nossas atualizações por email? </label>
+                        <legend>Disclaimer: as informações de idade serão mantidas em sigilo e não serão compartilhadas
+                        para outros usuários!</legend>
+                        <input type="submit" class="enviar-form" value="Registrar">
+                    </form>
+                </div>
+
+                <div class="hide" data-conteudo="rainbow6siege">
+                    <form class="form">
+                        <label for="email"> Insira teu email: </label>
+                        <input type="text" id="email" placeholder="ze@gmail.com" required>
+                        <label for="nickR6S"> Insira teu nickname: </label>
+                        <input type="text" id="nickR6S" placeholder="Agente_00K7" required>
+                        <label for="idade"> Insira tua idade: </label>
+                        <input type="number" id="idade" placeholder="18" required>
+                        <fieldset>
+                            <legend> Qual seu main no ataque? </legend>
+                            <select>
+                                <option></option>
+                                <option> Ace </option>
+                                <option> Amaru </option>
+                                <option> Ash </option>
+                                <option> Blackbeard </option>
+                                <option> Blitz </option>
+                                <option> Buck </option>
+                                <option> Capitão </option>
+                                <option> Dokkaebi </option>
+                                <option> Finka </option>
+                                <option> Flores </option>
+                                <option> Fuze </option>
+                                <option> Gridlock </option>
+                                <option> Glaz </option>
+                                <option> Hibana </option>
+                                <option> Iana </option>
+                                <option> IQ </option>
+                                <option> Jackal </option>
+                                <option> Kali </option>
+                                <option> Lion</option>
+                                <option> Maverick </option>
+                                <option> Montagne </option>
+                                <option> Nokk </option>
+                                <option> Nomad </option>
+                                <option> Osa </option>
+                                <option> Sens </option>
+                                <option> Sledge </option>
+                                <option> Thatcher </option>
+                                <option> Thermite </option>
+                                <option> Twitch </option>
+                                <option> Ying </option>
+                                <option> Zero </option>
+                                <option> Zofia </option>
+                            </select>
+                            <legend> Qual seu main na defesa? </legend>
+                            <select>
+                                <option></option>
+                                <option> Alibi </option>
+                                <option> Aruni </option>
+                                <option> Azami </option>
+                                <option> Bandit </option>
+                                <option> Castle </option>
+                                <option> Caveira </option>
+                                <option> Clash </option>
+                                <option> Doc </option>
+                                <option> Echo </option>
+                                <option> Ela </option>
+                                <option> Frost </option>
+                                <option> Goyo </option>
+                                <option> Jäger </option>
+                                <option> Kaid </option>
+                                <option> Kapkan </option>
+                                <option> Lesion </option>
+                                <option> Maestro </option>
+                                <option> Melusi </option>
+                                <option> Mira </option>
+                                <option> Mozzie </option>
+                                <option> Mute </option>
+                                <option> Oryx </option>
+                                <option> Pulse </option>
+                                <option> Rook </option>
+                                <option> Smoke </option>
+                                <option> Tachanka </option>
+                                <option> Thorn </option>
+                                <option> Thunderbird </option>
+                                <option> Valkyrie </option>
+                                <option> Vigil </option>
+                                <option> Wamai </option>
+                                <option> Warden </option>
+                            </select>
+                        </fieldset>
+                        <label for="checkbox"><input type="checkbox" id="checkbox" class="checkbox"> Gostaria de receber nossas atualizações por email? </label>
+                        <legend>Disclaimer: as informações de idade serão mantidas em sigilo e não serão compartilhadas
+                        para outros usuários!</legend>
+                        <input type="submit" class="enviar-form" value="Registrar">
+                    </form>
+                </div>
+
+                <div class="hide" data-conteudo="csgo">
+                    <form class="form">
+                        <label for="email"> Insira teu email: </label>
+                        <input type="text" id="email" placeholder="ze@gmail.com" required>
+                        <label for="nickSteam"> Insira teu nickname: </label>
+                        <input type="text" id="nickSteam" placeholder="Agente_00K7" required>
+                        <label for="nickDiscord"> Insira teu nick no Discord: </label>
+                        <input type="text" id="nickDiscord" placeholder="Beluwuga" required>
+                        <label for="tagDiscord"> Insira tua tag no Discord: </label>
+                        <input type="text" id="tagDiscord" placeholder="#0001" required>
+                        <label for="idade"> Insira tua idade: </label>
+                        <input type="number" id="idade" placeholder="18" required>
+                        <label for="checkbox"><input type="checkbox" id="checkbox" class="checkbox"> Gostaria de receber nossas atualizações por email? </label>
+                        <legend>Disclaimer: as informações de idade serão mantidas em sigilo e não serão compartilhadas
+                        para outros usuários! Em relação ao nome e tag do Discord, só serão compartilhados se o usuário permitir.</legend>
+                        <input type="submit" class="enviar-form" value="Registrar">
+                    </form>
+                </div>
+
+                <div class="hide" data-conteudo="fortnite">
+                    <form class="form">
+                        <label for="email"> Insira teu email: </label>
+                        <input type="text" id="email" placeholder="ze@gmail.com" required>
+                        <label for="idade"> Insira tua idade: </label>
+                        <input type="number" id="idade" placeholder="18" required>
+                        <fieldset>
+                            <legend> Em qual plataforma você joga?</legend>
+                            <select>
+                                <option></option>
+                                <option> Celular </option>
+                                <option> Console </option>
+                                <option> PC </option>
+                            </select>
+                        </fieldset>
+                        <label for="nickEpicGames"> Insira teu nick da Epic Games:</label>
+                        <input type="text" id="nickEpicGames" placeholder="Agente_00K7" required>
+                        <label for="checkbox"><input type="checkbox" id="checkbox" class="checkbox"> Gostaria de receber nossas atualizações por email? </label>
+                        <legend>Disclaimer: as informações de idade serão mantidas em sigilo e não serão compartilhadas
+                        para outros usuários!</legend>
+                        <input type="submit" class="enviar-form" value="Registrar">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; Squad Builder - 2022</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
